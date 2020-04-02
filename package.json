@@ -1,0 +1,39 @@
+{
+  "name": "steam-market-price-notificator",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run-script watch",
+    "build": "npm run-script build-prod",
+    "watch": "webpack -w --config webpack/webpack.dev.js",
+    "build-dev": "webpack --config webpack/webpack.dev.js",
+    "build-prod": "webpack --config webpack/webpack.prod.js",
+    "test": "npx jest"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "bootstrap": "4.4.1",
+    "jquery": "3.4.1",
+    "popper.js": "1.16.1"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.103",
+    "@types/node": "^12.12.28",
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "@types/jest": "25.1.4",
+    "jest": "25.2.4",
+    "ts-jest": "25.3.0",
+    "typescript": "3.8.3",
+    "ts-loader": "6.2.2",
+    "style-loader": "1.1.3",
+    "css-loader": "3.4.2",
+    "webpack": "4.42.1",
+    "webpack-cli": "3.3.11",
+    "webpack-merge": "4.2.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

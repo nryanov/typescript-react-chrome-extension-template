@@ -1,2 +1,9 @@
 # typescript-react-chrome-extension-template
- Template project
+ - Typescript
+ - React
+ - Bootstrap 4
+
+
+```shell script
+npm build
+```
