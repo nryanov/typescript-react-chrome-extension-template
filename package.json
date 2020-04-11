@@ -1,7 +1,7 @@
 {
-  "name": "steam-market-price-notificator",
+  "name": "template-project",
   "version": "0.1.0",
-  "description": "",
+  "description": "Template project description",
   "scripts": {
     "start": "npm run-script watch",
     "build": "npm run-script build-prod",
@@ -13,15 +13,19 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "bootstrap": "4.4.1",
-    "jquery": "3.4.1",
-    "popper.js": "1.16.1"
+    "redux": "4.0.5",
+    "react-redux": "7.2.0",
+    "redux-thunk": "2.3.0",
+    "webext-redux": "2.1.6",
+    "jquery": "3.4.1"
   },
   "devDependencies": {
     "@types/chrome": "0.0.103",
     "@types/node": "^12.12.28",
     "@types/react": "^16.9.22",
     "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "7.1.7",
+    "@types/redux-thunk": "2.1.0",
     "@types/jest": "25.1.4",
     "jest": "25.2.4",
     "ts-jest": "25.3.0",

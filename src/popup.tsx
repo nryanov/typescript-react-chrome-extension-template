@@ -1,17 +1,19 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import "jquery/dist/jquery.min.js"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
+import {Store} from 'webext-redux';
+import SampleComponent from "./components/SampleComponent";
+import {Provider} from "react-redux";
 
-chrome.tabs.query({ active: true, currentWindow: true }, tab => {
-    ReactDOM.render((
-        <div className="container">
-            <div className="row">
-                <div className="col">
-                    <p>Popup</p>
-                </div>
-            </div>
-        </div>
-    ), document.getElementById("app"));
-});
+const store = new Store();
+
+if (chrome.tabs) {
+    chrome.tabs.query({ active: true, currentWindow: true }, tab => {
+        store.ready().then(() => {
+            ReactDOM.render((
+                <Provider store={store}>
+                    <SampleComponent name="options"/>
+                </Provider>
+            ), document.getElementById("app"));
+        });
+    });
+}

@@ -1,7 +1,7 @@
 {
-  "name": "Steam market price notificator",
+  "name": "Template",
   "version": "0.1",
-  "description": "Get notification when price of selected items are equal to desired",
+  "description": "Template project",
   "permissions": [
     "activeTab",
     "declarativeContent",
@@ -12,16 +12,6 @@
     "persistent": false
   },
   "options_page": "options.html",
-  "content_scripts": [
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "js/popup.js"
-      ]
-    }
-  ],
   "browser_action": {
     "default_popup": "popup.html"
   },
